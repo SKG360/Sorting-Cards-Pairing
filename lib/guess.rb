@@ -17,8 +17,4 @@ class Guess
   def card
     @card
   end
-
-  guess = Guess.new("10 of Hearts", @card)
-  p guess.response
-  p guess.card
 end
