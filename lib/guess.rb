@@ -11,7 +11,7 @@ attr_reader :card, :response
 
   def response_two_diamonds
 
-  end
+  end  
 
   def correct?
     @response == "#{@card.value} of #{@card.suit}"
