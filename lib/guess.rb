@@ -22,6 +22,19 @@ attr_reader :card, :response
       "Incorrect"
     else
       "Correct!"
+
+  def correct?
+    card_output = "#{@card.value} of #{@card.suit}"
+    card_output == @response
+  end
+
+  def feedback
+    card_output = "#{@card.value} of #{@card.suit}"
+    if
+      card_output == @response
+      return "Correct"
+    else
+      "Incorrect"
     end
   end
 
