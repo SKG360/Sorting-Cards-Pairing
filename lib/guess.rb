@@ -1,4 +1,4 @@
-# require './lib/card.rb'
+require './lib/card.rb'
 
 class Guess
 
@@ -8,6 +8,20 @@ attr_reader :card, :response
     @response = response
     @card = card
   end
+
+  def response_two_diamonds
+
+  end
+
+  def correct?
+    @response == "#{@card.value} of #{@card.suit}"
+  end
+
+  def feedback
+    if correct? == false
+      "Incorrect"
+    else
+      "Correct!"
 
   def correct?
     card_output = "#{@card.value} of #{@card.suit}"
@@ -23,7 +37,6 @@ attr_reader :card, :response
       "Incorrect"
     end
   end
-
 
 
 end
